@@ -3,11 +3,3 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~>3.0.13"
-
-group :development do
-  gem 'sqlite3'
-end
-
-group :production do
-  gem 'pg'
-end
