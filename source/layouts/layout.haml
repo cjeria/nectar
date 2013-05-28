@@ -1,0 +1,27 @@
+<!doctype html>
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    / Always force latest IE rendering engine or request Chrome Frame
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    / Use title if it's in the page YAML frontmatter
+    %title= data.page.title || "The Middleman"
+
+    %link{:href => "http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100,300", :rel => "stylesheet", :type => "text/css"}/
+
+    %link{:href => "stylesheets/bootstrap.css", :rel => "stylesheet"}/
+    %link{:href => "stylesheets/normalize.css", :rel => "stylesheet"}/
+    %link{:href => "stylesheets/style.css", :rel => "stylesheet"}/
+  %body{:class => page_classes}
+    = yield
+
+
+  %script{:src => "http://code.jquery.com/jquery-latest.min.js"}
+  %script{:src => "../js/jquery.smooth-scroll.js"}
+  %script{:src => "../js/jquery.cycle.all.js"}
+  %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+  %script{:src => "../js/bootstrap.js"}
+  %script{:src => "../js/packery.js"}
+  %script{:src => "../js/javascript.js"}
+  %script{:src => "../js/waypoints.min.js"}
+

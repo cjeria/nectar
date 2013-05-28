@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+/*div{background: rgba(255,0,0,0.1);}*/
+
+html, body{height:100%;}
+
+body {
+  text-align: center;
+  font-family:  'Roboto Slab', serif;
+  background:#E8E6E0;
+  padding:0;
+}
+
+ul li{
+  list-style:none;
+  h5{margin-top:20px}
+}
+
+p{line-height:24px; color:rgb(54, 39, 39);}
+
+a{color:white;}
+
+section .header_logo_container{
+  width:100%;
+  top: 0;
+  left: 0;
+
+  &.hide{
+    h1{
+      background: none;
+    }
+  }
+  h1{
+    background: url("../images/logo.png") no-repeat center 30px;
+    text-indent: 200%;
+    white-space: nowrap;
+    padding:140px 0 10px;
+    margin: 0;
+  }
+
+}
+
+#container{
+  margin:0 auto 20px;
+  .item{
+    width:285px;
+    height: 285px;
+
+    &.hero{height:480px; width:1170px;}
+    &.w1{ width:580px;}
+    &.h2{ height:580px; width:580px;}
+  }
+}
+
+form input, textarea{
+  width:400px;
+}
+
+form textarea{
+  height:200px;
+}
+
+#nav{
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  top:60px;
+
+  .span1{
+
+    &.selected{
+      a{
+
+        border-bottom:6px solid white;
+      }
+    }
+  }
+
+  a{
+    width: auto;
+    padding: 20px 0px;
+    vertical-align: middle;
+    display: block;
+    font-size: 12px;
+
+    &:hover{
+      text-decoration: none;
+      color:#E8E6E0;
+    }
+  }
+
+  .logo{display:none;}
+
+  &.sticky{
+    -webkit-transition: background 1s linear;
+    position: fixed;
+    top:0;
+    background: rgba(0,0,0,0.5);
+
+    a.logo{
+      display:block;
+      background: url("../images/logo_small.png") no-repeat center center;
+      width:auto;
+      height:40px;
+      padding: 10px 0;
+    }
+  }
+}
+
+.slideshow{
+  margin-bottom:10px;
+  max-width:1170px;
+  height:580px;
+  overflow: hidden;
+
+  img{
+    height:auto !important;
+  }
+}
+
+section{
+  position:relative;
+  min-height:100%;
+  padding:0 20px;
+
+  h3, p{
+    color:white
+
+    &.dark_text{
+      color:brown;
+      line-height:18px;
+    }
+  }
+
+  &.section-1{
+  overflow: hidden;
+  background:url("/images/flowers2.jpg")no-repeat fixed top center;
+  background-size: cover;
+
+  }
+
+  &.section-2{
+    overflow: hidden;
+    background:#e7e4dd;
+
+    .card{
+      background:white;
+      padding:10px 15px;
+      box-shadow:inset 1px 2px 2px rgba(0,0,0,0.3);
+      border-radius:5px;
+    }
+  }
+
+  &.section-3{
+    overflow: hidden;
+    background:white;
+    background-size: cover;
+  }
+
+  &.section-4{
+    overflow: hidden;
+    background:#d9d6cf;
+  }
+
+  &.section-5{
+    overflow: hidden;
+    background:url("/images/wallpaper.jpg")no-repeat fixed center center;
+    background-size: cover;
+  }
+}
+
+.box{
+  width:20px;
+  height:20px;
+  border:1px solid;
+  content:"";
+  -webkit-transform: rotate(45deg);
+}
+
+
+.container-fluid{
+
+  &.header{
+    padding:20px 0;
+    background-size: 100%;
+
+    h2, h3{
+      font-weight: 100;
+      color:white;
+      text-align: center;
+    }
+  }
+
+  .container{
+
+    &.top{
+      margin-top:70px;
+    }
+    .header-text{
+      margin:0;
+    }
+
+    .row-fluid{
+      .decoBorder{
+        border-top:1px solid rgb(54, 39, 39);
+        border-bottom:1px solid rgb(54, 39, 39);
+        padding: 5px 0;
+      }
+    }
+  }
+}
+
+
